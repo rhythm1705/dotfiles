@@ -3,7 +3,6 @@
 filetype plugin indent on
 syntax on
 set encoding=UTF-8
-color desertink
 
 "" various settings
 set backspace=indent,eol,start 			" Proper backspace behavior.
