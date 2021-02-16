@@ -70,9 +70,6 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " Vim-Lexical
 Plug 'reedes/vim-lexical'
 
-" Vim Devicons
-Plug 'ryanoasis/vim-devicons'
-
 " Markdown-Preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
@@ -82,14 +79,8 @@ Plug 	'ervandew/supertab'
 " Tagbar
 Plug 'majutsushi/tagbar'
 
-" You Complete Me
-Plug 'valloric/youcompleteme'
-
 " Airline
 Plug 'vim-airline/vim-airline'
-
-" NERD Tree
-Plug 'scrooloose/nerdtree'
 
 " Vim Markdown
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
@@ -100,11 +91,30 @@ Plug 'pbrisbin/vim-mkdir'
 " Nerd Commenter
 Plug 'scrooloose/nerdcommenter'
 
-" Fugitive
-Plug 'tpope/vim-fugitive'
+Plug 'lervag/vimtex'
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
 
-" Indent Guides
-Plug 'nathanaelkane/vim-indent-guides'
+Plug 'KeitaNakamura/tex-conceal.vim'
+set conceallevel=1
+let g:tex_conceal='abdmg'
+hi Conceal ctermbg=none
+
+" Ayu Theme
+Plug 'ayu-theme/ayu-vim'
+
+" Vim Devicons
+Plug 'ryanoasis/vim-devicons'
+
+" COC
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Initialize plugin system
 call plug#end()
+
+set termguicolors
+let ayucolor="dark"
+colorscheme ayu
+
+
